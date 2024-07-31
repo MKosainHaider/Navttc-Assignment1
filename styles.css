@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.auth-links a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.btnauth {
+  display: flex;
+}
+
+.login {
+  background-color: #f1c40f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.signup {
+  background-color: #fff;
+  color: #f1c40f;
+  border: 1px solid #f1c40f;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* container1 Section Styles */
+.container1-section {
+  padding: 80px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container1-content > h1 {
+  font-weight: 400;
+  font-family: Means Web, Georgia, Times, Times New Roman, serif;
+  letter-spacing: -0.0625rem;
+  font-size: 48px;
+}
+
+.container1-content > p {
+  font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana,
+    sans-serif;
+  color: var(--copy-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Preview Section Styles */
+.preview-section {
+  background-color: blue;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.ps1 {
+  text-align: left;
+}
+
+.preview-image {
+  width: 500px;
+  height: 500px;
+}
+
+/* Statistics Section Styles */
+.stats-section {
+  background-color: #333;
+  padding: 40px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+/* Design Section Styles */
+.design-section {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Content Section Styles */
+.content-section {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Pricing Section Styles */
+.pricing-section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.plan {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.plan.best-value {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.plan h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.plan p.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+.plan p.price del {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.plan ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.plan .button {
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.plan .button:hover {
+  opacity: 0.8;
+}
+
+/* Template Section Styles */
+.template-section {
+  background-color: #fff;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.template-box {
+  text-align: left;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Helping Hand Section Styles */
+.helping-hand-section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-content {
+  text-align: left;
+  width: 400px;
+}
+
+.image-content {
+  width: 500px;
+}
+
+.image-content img {
+  width: 100%;
+}
+
+.btn {
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Call to Action Section Styles */
+.cta-section {
+  background-color: #f1c40f;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Discount Banner Styles */
+.discount-banner {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
