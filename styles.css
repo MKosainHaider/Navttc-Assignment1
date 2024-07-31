@@ -219,7 +219,7 @@ nav li a {
 }
 
 /* Testimonial Section Styles */
-.testimonial-section {
+/* .testimonial-section {
   background-color: #f2f2f2;
   padding: 80px 0;
   text-align: center;
@@ -232,6 +232,12 @@ nav li a {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
+} */
+.center-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
 }
 
 /* Content Section Styles */
@@ -416,4 +422,38 @@ nav li a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.banner-section {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #ebe7e7; */
+  box-sizing: border-box;
+}
+.banner-left {
+  padding: 100px;
+}
+.quotesection {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbeeca;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  padding: 5%;
+}
+@media (max-width: 720px) {
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .quotesection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
